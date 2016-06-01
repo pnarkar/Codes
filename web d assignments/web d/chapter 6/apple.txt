@@ -1,0 +1,9 @@
+<!Doctype html>
+<html>
+<head><title>Apple</title></head>
+<body> 
+ 
+
+<p> Apple is a fruit </p>
+</body>
+</html>

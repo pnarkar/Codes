@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+       <div class="container-fluid">
+<form role="form"  action='part5.jsp'>
+
+
+<div class="row">
+<div class="col-sm-12">
+ 
+
+
+  <div class="form-group" style="border:1px solid">
+   <h3>Claim Form&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <i>PLEASE INCLUDE YOUR PET'S MEDICAL RECORDS TO HELP EXPEDITE PROCESSING</i></h3></div>
+<h3>&nbsp&nbsp1:General Information &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i>Please fill out this form completely.Incomplete form will delay processing.</i></h3>
+  <hr>
+ 
+  
+  
+ 
+  </div>
+  
+  
+ 
+	
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-6">
+ 
+
+
+  <div class="form-group" >
+    <div style="border:1px solid"> <label for="Your Information">Your Information:</label>
+    <input type="checkbox" name="Information" value="yes"/> <i>Check here if this is a new address</i></br></div>
+	<div class="col-sm-2"><label for="Name">Name:</label></div>
+    <div class="col-sm-10"><input type="text" name="name"/></div>
+	<div class="col-sm-2"><label for="Address">Address:</label></div>
+    <div class="col-sm-10"><input type="text" name="address"/></div>
+	<div class="col-sm-2"><label for="City,State,Zip">City,State,Zip:</label></div>
+    <div class="col-sm-10"><input type="text" name="City,State,Zip"/></div>
+	<div class="col-sm-2"><label for="Phone">Phone:</label></div>&nbsp&nbsp&nbsp
+    <input type="text" name="Phone"/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	<label for="Email">Email:</label>
+    <input type="text" name="Email"/>
+	
+	
+    
+  </div>
+ 
+  
+ 
+ 
+  </div>
+  
+  
+ <div class="col-sm-6" >
+ 
+  
+  <div class="form-group" >
+   <div style="border:1px solid"> <label for="Your Information">Pet Information</label></br></div>
+    
+	<div class="col-sm-3"><label for="Account Number">Account Number:</label></div>
+    <div class="col-sm-9"><input type="text" name="AccountNumber"/></div>
+	<div class="col-sm-3"><label for="Name">Name:</label></div>
+    <div class="col-sm-9"><input type="text" name="Name1"/></div>
+	<div class="col-sm-3"><label for="Breed">Breed:</label></div>
+    <div class="col-sm-9"><input type="text" name="Breed"/></div>
+	<div class="col-sm-3"><label for="Age">Age:</label></div>&nbsp&nbsp&nbsp
+    <input type="text" name="Age"/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	<label for="Gender">Gender:</label>
+    <input type="text" name="Gender"/>
+	
+	
+    
+  </div>
+ 
+  
+  
+	
+	</div>
+	
+</div>
+
+
+<div class="row">
+<div class="col-sm-12"   >
+ 
+
+
+  <div class="col-sm-6">
+   <h3>2:Diagnosis/Symptom Information </h3></div>  <div class="col-sm-6" style="margin-top:20px"><i>Help us! By proving the "story of Occurence/Diagnosys." you will help us avoid delay in processing your claim</i></div>
+
+  
+ 
+  
+  
+  
+ 
+  </div>
+  
+  
+ 
+	
+</div>
+<hr>
+
+<div class="row">
+<div class="col-sm-12"   >
+ 
+
+
+  
+ <textarea rows="4" cols="188" name="describe"> Story of Occurrence/Diagnosis - Please describe this incident, including dates, details and symptoms leading up to it </textarea>
+
+  
+ 
+  
+ 
+ 
+  </div>
+  
+  
+ 
+	
+</div>
+
+<div class="row">
+ <div class="col-sm-6" >
+ 
+  
+  <div class="form-group" >
+   <div> <label for="This claim is related to:"></i>This claim is related to:</i><input type="radio" name="type" value="accident"/>accident<input type="radio" name="type" value="illness"/>illness<input type="radio" name="type" value="wellness"/>wellness</label></br></div>
+    
+	<label for="FT">Is this claim an estimate for future treatment?<input type="radio" name="futuretreatment" value="yes"/>yes<input type="radio" name="futuretreatment" value="no"/>no</label>
+    <label for="claim">Total amount claimed:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" name="amountclaim" /></label>
+	<label for="illness/injury">Date illness/injury first occurred:<input type="date" name="illness/injury"/></label></br>
+	<label for="Send payment to">Send payment to:<input type="radio" name="paymentto" value="me"/>me<input type="radio" name="paymentto" value="Veterinarian"/>Veterinarian</label>
+	
+	
+    
+  </div>
+ 
+  
+  
+	
+	</div>
+  
+  
+ <div class="col-sm-6" >
+ 
+  <form role="form">
+  <div class="form-group" >
+  <label for="Veterinarian">Veterinarian:<input type="text" name="Veterinarian"/></label></br>
+  <label for="Clinic Name:">Clinic Name:<input type="text" name="Clinic Name:"/></label></br>
+  <label for="Phone">Phone:</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="text" name="phone"/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	<label for="Fax">Fax:</label>
+    <input type="text" id="Fax"/>
+	<label for="other veterinarian">Did any other veterinarian treat your pet?:<input type="radio" name="other veterinarian" value="yes"/>yes<input type="radio" name="other veterinarian" value="no"/>no</label></br>
+	<label for="new condition">Is this a new condition?:<input type="radio" name="new condition" value="yes"/>yes<input type="radio" name="new condition" value="no"/>no</label>
+   
+	
+    
+  </div>
+ 
+  
+  
+	
+	</div>
+	
+</div>
+
+<div class="row">
+<div class="col-sm-12"   >
+ 
+
+
+  
+   <h3>&nbsp&nbsp3:Pet Owner Declaration</h3>
+
+  
+ 
+  
+  
+ 
+  </div>
+  
+  
+ 
+	
+</div>
+<hr>
+ <div class="row">
+<div class="col-sm-12"   >
+ 
+
+
+  
+   I confirm to the best of my knowledge the above statements are true in every respect. I understand that the fees listed may not be covered or may exceed my plan benefit. I understand that I am financially responsible to my veterinarian for the entire treatment. I understand that this claim
+cannot be adjusted without itemized receipts. I also understand that the deliberate misrepresentation of the animal's condition or the omission of any material facts may result in the denial of the claim and/or the cancellation of coverage. I authorize United States Fire Insurance Company and
+its business partners to review and obtain a copy of ALL RECORDS including the insurance claim records and medical records as to examination, history, diagnosis, treatment and prognosis with respect to any condition. I further authorize these entities to disclose identifying information about me and my pet, as well as information about my claim experience, to my veterinarian.
+
+
+  
+ 
+  
+ 
+ 
+  </div>
+  
+  
+ 
+	
+</div>
+	
+	<div class="row">
+ <div class="col-sm-6" >
+ 
+
+  <div class="form-group" >
+   
+	<label for="Sign">Signature of Pet Owner:<input type="text" name="Sign"/></label></br>
+	
+	
+	
+    
+  </div>
+ 
+  
+  
+	
+	</div>
+  
+  
+ <div class="col-sm-6" >
+ 
+  <div class="form-group" >
+ 
+   <label for="Date">Date:<input type="Date" name="date"/></label></br>
+	
+    
+  </div>
+ 
+  
+
+	
+	</div>
+	
+</div>
+ <hr>
+ 
+ <div class="row">
+<div class="col-sm-12"   style="margin-left:320px">
+ 
+
+
+  
+   <h4>Please read IMPORTANT NOTICE document that follows for additional information</h4>
+
+  
+ 
+  
+ 
+ 
+  </div>
+  
+  
+ 
+	
+</div>
+
+<div class="row">
+<div class="col-sm-12"   >
+ 
+
+
+  
+   <h3>&nbsp&nbsp4:3 Easy Ways to Submit a Claim Form-<i>You must submit an itemized invoice with this claim form</i></h3>
+
+  
+ 
+  
+ 
+ 
+  </div>
+  
+  
+ 
+	
+</div>
+<hr>
+
+<div class="col-sm-12" style="margin-left:180px">
+ 
+
+
+  <div class="col-sm-3" style="border:1px solid;margin-right:20px">  <h5>E-Mail:</h5> <div>claims@aspcapetinsurance.com
+</div> <i>scan and attach your receipts</i> </br></br></div>
+ 
+    <div class="col-sm-3" style="border:1px solid;margin-right:20px">  <h5>FAX:</h5> <div>1-866-888-2495
+</div> <i>no cover sheet necessary</i> </br></br></div>
+   
+   <div class="col-sm-3" style="border:1px solid">  <h5>MAIL</h5> 
+   ASPCA Pet Health Insurance</br>
+   3840 Greentree Ave SW</br>
+   Canton, Ohio 44706</br>
+  
+
+  
+ 
+  
+
+ 
+  </div>
+  
+  
+ 
+	
+</div>
+<div style="margin-left:650px">
+<input type="submit" name="submit" />
+</div>
+
+</form>
+  </div>
+    </body>
+</html>

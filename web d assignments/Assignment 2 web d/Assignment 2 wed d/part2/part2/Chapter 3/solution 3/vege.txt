@@ -1,0 +1,11 @@
+
+<!Doctype html>
+<html>
+<head><title>only vege</title></head>
+<body><a href="index.html"> 
+<img src="images/logo.gif" alt="example cafe" width="194" height="80"/><br/></a>
+<h2> Vegetarian food </h2>
+  <p> <small> <a href="menu.html"> Back </a> </small> </p>
+</body>
+
+</html>

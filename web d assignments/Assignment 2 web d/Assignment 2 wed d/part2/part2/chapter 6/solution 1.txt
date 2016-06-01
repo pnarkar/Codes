@@ -1,0 +1,17 @@
+<!Doctype html>
+<html>
+ <head>
+ <title>Fruit Example</title>
+</head> 
+ 
+<frameset cols="200,450 *">
+<frame src="linksNav.html"/>
+<frame src="linksMain.html" name="main_page"/>
+</frameset>
+
+<noframes><body>This site makes uses of a technology called frames. Unfortunately
+   the browser you are using does not support this technology. We recommend that
+   you update your browser. We apologize for any inconvenience this causes.
+   </body></noframes>
+
+</html>

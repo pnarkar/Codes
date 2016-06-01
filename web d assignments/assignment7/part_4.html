@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Part4</title>
+  <style>
+  <!-- manipulation -->
+  
+  p {
+    background: yellow;
+    margin: 6px 0;
+  }
+  p.off {
+    background: black;
+  }
+  
+  #gone {
+    background: yellow;
+  }
+  
+  .selected {
+    color: red;
+  }
+  
+ 
+  
+  em {
+    color: blue;
+    font-weight: bold;
+  }
+  div {
+    color: red;
+  }
+  
+  .blue {
+    color: blue;
+  }
+  .mark {
+    background: yellow;
+  }
+  
+  #go {
+    background-color: #bca;
+    width: 100px;
+    border: 1px solid green;
+  }
+  
+  div.newcolor {
+    background: blue;
+  }
+    
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<p> 1. Manipulation </p>
+<h4>My name is Pranali</h4><h3>I am an Engineer</h3>
+
+<span><b>I have experience</b></span>
+<div id="gone">I hit centuries every next match </div>
+<!-- manipulation2 --> 
+<br>
+<!-- manipulation1 -->
+<p>Hello</p>Welcome !<p>Namaste</p>
+<button>Wassup How are you ?</button>
+ 
+
+<script>
+<!-- manipulation -->
+<!-- 1 -->
+ $("p").click(function() {
+ $(this).toggleClass("on");
+});
+var p;
+$("button").click(function() {
+  if ( p ) {
+    p.appendTo("body"); 
+    p = null;
+  } else {
+    p = $("p").detach(); <!-- detach() -->
+  }
+});
+
+<!-- 2 -->
+$("span").appendTo("#gone"); <!-- appendTo() -->
+<!-- 3 -->
+$("h4").clone().prependTo("h3"); <!-- clone() -->
+
+</script>
+
+
+<p> 2. Bon Voyage </p>
+<p>Hello</p>
+<p>and</p>
+<p>bye</p>
+
+<attr>
+<p> White <em title="huge, gigantic">tigers are</em> getting extinct</p>
+The title of topic is :<div></div>
+<br><br>
+
+<p>Once upon a time </p>
+<input type="text" value="type something">
+ 
+<p class="blue">Click on the first page</p>
+<p class="blue mark">mark the text</p>
+<p class="blue">on these</p>
+<p class="blue">paragraphs</p>
+
+<br><br>
+<script>
+<!-- Attributes -->
+$( "p:last" ).addClass( "selected mark" );
+
+var title = $( "em" ).attr( "title" );
+$( "div" ).text( title );
+
+$( "input" ).on( "blur", function() {
+  $( this ).val(function( i, val ) {
+    return val.toUpperCase();
+  });
+});
+
+$( "p" ).click(function() {
+  $( this ).toggleClass( "mark" );
+});
+
+</script>
+
+
+<p> 3.  after Effects  </p>
+
+<button id="go">&raquo; Jog</button>
+<div id="block">Hello!</div>
+
+
+<script>
+$( "#go" ).click(function() {
+  $( "#block" ).animate({
+    width: "70%",
+    opacity: 0.4,
+    marginLeft: "0.6in",
+    fontSize: "3em",
+    borderWidth: "10px"
+  }, 1500 );
+});
+
+</script>
+
+<br><br>
+Click here !
+<div>ten</div>
+<div>eleven</div>
+<div>twelve</div>
+<div>thirteen</div>
+<div>fifteen</div>
+
+<script>
+
+$( document.body ).click(function() {
+  if ( $( "div:first" ).is( ":hidden" ) ) {
+    $( "div" ).show( "slow" );
+  } else {
+    $( "div" ).slideUp();
+  }
+});
+</script>
+
+<p>
+  Fadeaway
+</p>
+ 
+<script>
+$( "p" ).click(function() {
+  $( "p" ).fadeOut( "slow" );
+});
+</script>
+
+
+<p> 4. PHP </p>
+
+<button id="getp">text width</button>
+<button id="getd">Document Height</button>
+<button id="getw">Window Height & width</button>
+ 
+<div>&nbsp;</div>
+<p>
+  Sample paragraph to test height and width
+</p>
+ 
+<script>
+function showHeight( element, height ) {
+  $( "div" ).text( "The height for the " + element + " is " + height + "px." );
+}
+$( "#getp" ).click(function() {
+  showHeight( "paragraph", $( "p" ).height() );
+});
+$( "#getd" ).click(function() {
+  showHeight( "document", $( document ).height() );
+});
+$( "#getw" ).click(function() {
+  showHeight( "window", $( window ).height() );
+});
+</script>
+
+<p>Hello</p><p></p>
+ 
+<script>
+var p = $( "p:first" );
+$( "p:last" ).text( "scrollTop:" + p.scrollTop() );
+</script>
+ 
+<div>
+  <p>&nbsp&nbsp&nbsp&nbsp Hello</p>The coordinates of this para 
+</div>
+<p></p>
+ 
+<script>
+var p = $( "p:first" );
+var position = p.position();
+$( "p:last" ).text( "left: " + position.left + ", top: " + position.top );
+</script> 
+
+
+<p> 5. Events </p>
+
+<form>
+  <input id="target" type="text" value="Field 1">
+  <input type="text" value="Field 2">
+</form>
+<div id="other">
+  Trigger
+</div>
+The event handler can be bound to the first input field:
+
+<script>
+$( "#target" ).blur(function() {
+  alert( "Handler for .blur() called." );
+});
+</script>
+<br><br>
+
+<img alt="Book" id="book">
+
+<script>
+$( "#book" )
+  .error(function() {
+    alert( "Handler for .error() called." )
+  })
+  .attr( "src", "missing.png" );
+  
+  $( window ).resize(function() {
+  $( "#log" ).append( "<div>Handler for .resize() called.</div>" );
+});
+   
+</script>
+
+<div id="target">
+  Click
+</div>
+
+<script>
+$( "#target" ).toggle(function() {
+  alert( "First handler for .toggle() called." );
+}, function() {
+  alert( "Second handler for .toggle() called." );
+});
+</script>
+
+<div class="out overout">
+  <span>move your cursor</span>
+  <div class="in">
+  </div>
+</div>
+ 
+<div class="out enterleave">
+  <span>move your mouse</span>
+  <div class="in">
+  </div>
+</div>
+ 
+<script>
+var i = 0;
+$( "div.overout" )
+  .mouseover(function() {
+    i += 1;
+    $( this ).find( "span" ).text( "mouse over x " + i );
+  })
+  .mouseout(function() {
+    $( this ).find( "span" ).text( "mouse out " );
+  });
+ 
+var n = 0;
+$( "div.enterleave" )
+  .mouseenter(function() {
+    n += 1;
+    $( this ).find( "span" ).text( "mouse enter x " + n );
+  })
+  .mouseleave(function() {
+    $( this ).find( "span" ).text( "mouse leave" );
+  });
+</script>
+
+
+<p> 6. Traversing </p>
+
+ 
+
+<div>Click here</div>
+<div>to iterate through</div>
+<div>these divs.</div>
+ 
+<script>
+$( document.body ).click(function() {
+  $( "div" ).each(function( i ) {
+    if ( this.style.color !== "blue" ) {
+      this.style.color = "blue";
+    } else {
+      this.style.color = "";
+    }
+  });
+});
+</script>
+<br><br>
+<input type="button" value="equalize div heights">
+<div style="background: red; height: 20px; "></div>
+<div style="background: green; height: 30px;"></div>
+<div style="background: blue; height: 40px; "></div>
+ 
+<script>
+$.fn.equalizeHeights = function() {
+  var maxHeight = this.map(function( i, e ) {
+    return $( e ).height();
+  }).get();
+  return this.height( Math.max.apply( this, maxHeight ) );
+};
+ 
+$( "input" ).click(function() {
+  $( "div" ).equalizeHeights();
+});
+</script>
+ 
+<br><br>
+<div><button disabled="disabled">First</button> - <span></span></div>
+<div><button>Second</button> - <span></span></div>
+<div><button disabled="disabled">Third</button> - <span></span></div>
+ 
+<script>
+$( "button[disabled]" ).next().text( "this button is disabled" );
+</script>
+
+<p> 7. Forms </p>
+
+<form>
+  <select name="single">
+    <option>Single</option>
+    <option>Double</option>
+  </select>
+ 
+  <br>
+  <select name="multiple" multiple="multiple">
+    <option selected="selected">section1</option>
+    <option>section2</option>
+    <option selected="selected">section3</option>
+  </select>
+ 
+  <br>
+  <input type="checkbox" name="check" value="check1" id="ch1">
+  <label for="ch1">checkone</label>
+  <input type="checkbox" name="check" value="check2" checked="checked" id="ch2">
+  <label for="ch2">checktwo</label>
+ 
+  <br>
+  <input type="radio" name="radio" value="radio1" checked="checked" id="r1">
+  <label for="r1">radio1</label>
+  <input type="radio" name="radio" value="radio2" id="r2">
+  <label for="r2">radio2</label>
+</form>
+ 
+<p><tt id="results"></tt></p>
+ 
+<script>
+  function showValues() {
+    var str = $( "form" ).serialize();
+    $( "#results" ).text( str );
+  }
+  $( "input[type='checkbox'], input[type='radio']" ).on( "click", showValues );
+  $( "select" ).on( "change", showValues );
+  showValues();
+</script>
+ 
+<p>Type 'correct' to validate.</p>
+<form action="javascript:alert( 'success!' );">
+  <div>
+    <input type="text">
+    <input type="submit">
+  </div>
+</form>
+<span></span>
+ 
+<script>
+$( "form" ).submit(function( event ) {
+  if ( $( "input:first" ).val() === "correct" ) {
+    $( "span" ).text( "Validated..." ).show();
+    return;
+  }
+ 
+  $( "span" ).text( "Not valid!" ).show().fadeOut( 1000 );
+  event.preventDefault();
+});
+</script>
+
+ 
+<p> 8. Utilities </p> 
+ 
+ Is [] an Array? <b></b>
+ 
+<script>
+$( "b" ).append( "" + $.isArray(..));
+</script>
+
+ 
+<pre id="original"></pre>
+<pre id="trimmed"></pre>
+ 
+<script>
+var str = "         lots of spaces before and after         ";
+$( "#original" ).html( "Original String: '" + str + "'" );
+$( "#trimmed" ).html( "$.trim()'ed: '" + $.trim(str) + "'" );
+</script>
+
+Is it a Regular Expression? <b></b>
+ 
+<script>
+$( "b" ).append( "" + jQuery.type( window.notDefined ) );
+</script>
+  
+ 
+</body>
+</html>
+

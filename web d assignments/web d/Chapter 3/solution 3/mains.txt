@@ -1,0 +1,16 @@
+<!Doctype html>
+<html>
+<head><title>mains</title></head>
+<body>
+<a href="index.html"> <img src="images/logo.gif" alt="example cafe" width="194" height="80"/></a><br/>
+ <ul>
+ <li> Spinach and Ricotta Roulade (<a href="vege.html"> v </a>) </li>
+ <li> Beef Tournados with Mustard and Dill Sauce </li>
+ <li> Roast Chicken Salad </li>
+ <li> Icelandic Cod with Parsley Sauce </li>
+ <li> Mushroom Wellington (<a href="vege.html"> v </a>) </li>
+ </ul>
+<p> <small> <a href="menu.html"> Back </a> </small> </p>
+</body>
+
+</html>

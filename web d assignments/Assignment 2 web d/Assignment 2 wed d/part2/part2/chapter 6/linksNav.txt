@@ -1,0 +1,15 @@
+
+ <!DOCTYPE html>
+<html>
+
+ <head>
+ <title>linksNav</title>
+ </head>
+ <body>
+  <h3>Click on the fruit to find out more about it</h3>  
+
+<a href="apple.html" target="main_page"><img src="image/apple.jpg" alt="apple"/></a>
+<a href="orange.html" target="main_page"><img src="image/orange.jpg" alt="orange"/></a>
+<a href="banana.html" target="main_page"><img src="image/banana.jpg" alt="banana"/></a>
+ </body>
+ </html>

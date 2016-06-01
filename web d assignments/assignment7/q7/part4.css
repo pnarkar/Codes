@@ -1,0 +1,22 @@
+.main{
+	margin:auto;
+	
+}
+.container{
+	margin-top: 100px;
+	margin-bottom: 200px;
+	margin-left: 200px;
+	border: 1px solid black;
+	width:60%;
+	height:auto;
+
+}
+
+.image{
+	
+	float:right;
+	padding-right: 50px;
+	width:150px;
+	height: 55px;
+	padding-top: 25px;
+}

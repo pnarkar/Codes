@@ -1,0 +1,36 @@
+#page {
+	 padding:5px;  
+	 margin:10px;  
+	 border:1px solid #000000;
+	 background-color:#FFF1F1;
+	
+	
+}
+tr{
+    background-color: #F6F6F1;
+    color: black;
+}
+
+img.main_image{
+	border:1px solid #000000;
+	margin:3px;
+	
+}
+
+
+a:link { 
+   color: green;
+   
+   
+}
+a:visited { color: black;
+  
+}
+
+a:hover{font-size:120%}
+
+
+.column3of9, .column6of9, .column9of9 {  float:left;  width:280px; padding:10px;  margin:60px;  height:173px;}
+
+
+

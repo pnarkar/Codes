@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.books.msis.POJO.BookBean" table="books">
+    <id column="id" name="id">
+          <generator class="native"/>
+   </id>
+   <property name="isbn" type="string" column="isbn"></property>
+   <property name="title" type="string" column="title"></property>
+   <property name="author" type="string" column="author"></property>
+   <property name="price" type="string" column="price"></property>
+  </class>
+</hibernate-mapping>

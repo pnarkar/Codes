@@ -1,0 +1,9 @@
+<!Doctype html>
+<html>
+<head><title>MainFrame</title></head>
+<body> 
+ 
+
+<p> The destination of the link should appear in this window </p>
+</body>
+</html>

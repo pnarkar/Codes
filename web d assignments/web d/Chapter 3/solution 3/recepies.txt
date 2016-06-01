@@ -1,0 +1,18 @@
+<!Doctype html>
+<html>
+<head><title>Recepies</title></head>
+<body>
+<a href="index.html"> <img src="images/logo.gif" alt="example cafe" width="194" height="80"/></a><br/>
+<ul> 
+<li>1 <del>1/2</del> <ins>3/4</ins> cups ricotta</li>
+<li>3/4 cup milk</li>
+<li>4 eggs</li>
+<li>1 cup plain <ins>white</ins> flour </li>
+<li>1 teaspoon baking powder</li>
+<li><del>75</del> <ins>50g</ins> butter</li>
+<li>pinch of salt</li>
+</ul>
+<p> <small> <a href="solution3.html"> Back </a> </small> </p>
+</body>
+
+</html>

@@ -1,0 +1,267 @@
+<!Doctype html>
+<html>
+<head><title>www.northeastern.edu</title></head>
+<body>
+<table border="1">
+<h1>EVENT INFORMATION AGREEMENT (EIA) – PAGE 3 of 3</h1>
+<p>PLEASE fill out each section COMPLETELY and sign the agreement at the bottom of page</p>
+
+<tr>
+<td>
+<table>
+<tr><td><label for="nameofevent">Name of Event</label></td>
+<td><input type="text" name="txt1" id="name" size="60" maxlength="250"/> </td>
+</tr>
+</table>
+</td>
+<td>
+<table>
+<tr>
+<td><form><fieldset>
+<label><input type="radio" name="radioset" value="Blackman Auditorium"/>
+ Blackman Auditorium</label>
+<label><input type="radio" name="radioset" value="Fenway Center"/>
+ Fenway Center</label>
+<label><input type="radio" name="radioset" value="Kerr Hall"/>
+ Kerr Hall</label>
+<label><input type="radio" name="radioset" value="afterHOURS"/>
+ afterHOURS:</label>
+</fieldset></form></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td><label for="date/day">Day/Date(s) of Event (note rehearsals)</label></td>
+<td><input type="text" name="txt2" id="date/day" size="40" maxlength="250"/> </td>
+</tr>
+</table>
+</td>
+
+<td rowspan="2">
+<table>
+<tr>
+<td><label for="cost">Ticket Prices (N/A for Kerr & afterHOURS):
+</label></td>
+<td><input type="text" name="txt3" id="cost" size="20" maxlength="250"/> </td>
+</tr>
+<tr>
+<td><label for="nooftic"># of Attendees/tickets to be printed:
+</label></td>
+<td><input type="text" name="txt4" id="tcno" size="20" maxlength="250"/></td>
+<td><label for="fe">Free Event:</label></td>
+<td><input type="text" name="txt5" id="fe" size="20" maxlength="250"/></td>
+</tr>
+<tr>
+<td><input type="text" name="txt6" id="nustudent" size="10" maxlength="250"/></td>
+<td><label for="student">NU Student ONLY</label></td>
+<td><input type="text" name="txt7" id="gp" size="10" maxlength="250"/></td>
+<td><label for="gp">General Public</label></td>
+</tr>
+<tr>
+<td><input type="text" name="txt8" id="faculty" size="10" maxlength="250"/></td>
+<td><label for="faculty">NU Faculty/Staff</label></td>
+<td><input type="text" name="txt9" id="others" size="10" maxlength="250"/></td>
+<td><label for="others">Other (please specify)</label></td>
+</tr>
+<tr><td><label for="sell">Tickets are to be sold:</label></tr>
+<tr><td><label for="sales">Internet Sales:</label></td>
+<td><input type="text" name="txt10" id="sales" size="10" maxlength="250"/></td>
+<td><label for="centre">Ticket Center/Phone Orders:</label></td><td><input type="text" name="txt11" id="phone" size="10" maxlength="250"/></td></tr>
+</tr>
+<tr><td><label for="seating">Reserved Seating:</label></td>
+<td><input type="text" name="txt12" id="reserved" size="10" maxlength="250"/></td>
+<td><label for="general">General Admission: </label></td>
+<td><input type="text" name="txt13" id="admission" size="10" maxlength="250"/></td>
+</tr>
+</table>
+</td>
+<tr><td><table><tr>
+<td><label for="organization">Student Organization/Department
+</label></td>
+<td><input type="text" name="txt14" id="organization" size="10" maxlength="250"/></td></tr></table></td></tr>
+
+<tr><td><table><tr>
+<td><label for="contact">Contact Name/Position</label></td>
+<td><input type="text" name="txt15" id="contact" size="30" maxlength="250"/></td></tr></table></td>
+
+<td rowspan="3">
+<table>
+<tr>
+<td><label for="tckt">Ticket Information (N/A for Kerr & afterHOURS):
+</label></td>
+</tr>
+
+<tr>
+      <td><label for="1">Please indicate event name and sponsor information, as it will appear on 
+</label></td>
+</tr>
+<tr>
+      <td><label for="2">the tickets on the three lines below. There are thirty characters of text 
+</label></td>
+</tr>
+<tr>
+<td><label for="3">(including spaces) on each line
+</label></td>
+</tr>
+<tr>
+<td> <textarea name="txtBody" id="suggestionBody" cols="50" rows="4"
+ tabindex="2"> </textarea> </td>
+</tr>
+<tr><td><label for="sg"># of Tickets to be held for student group:
+</label></td>
+<td><input type="text" name="txt16" id="sg" size="40" maxlength="250"/></td>
+</tr>
+</table>
+</td>
+</tr>
+ 
+
+<tr><td><table>
+<td><label for="pn">Phone Number</label></td>
+<td><input type="text" name="txt17" id="pn" size="20" maxlength="250"/></td>
+</table></td></tr>
+<tr><td><table>
+<td><label for="email">E-mail</label></td>
+<td><input type="text" name="txt18" id="email" size="40" maxlength="250"/></td>
+</table></td></tr>
+
+<tr>
+<td>
+<table>
+<tr>
+<td><label for="st">Start Time</label></td>
+<td><input type="text" name="txt19" id="st1" size="20" maxlength="250"/></td>
+</tr>
+
+
+
+<tr>
+<td><label for="st">End Time</label></td>
+<td><input type="text" name="txt29" id="s9" size="20" maxlength="250"/></td>
+</tr>
+
+<tr>
+<td><label for="ar">Attached Tech Rider:</label></td> 
+<td><input type="text" name="txt21" id="ar1" size="30" maxlength="250"/></td>
+</tr>
+
+
+<tr><td><label for="a1">Will there be merchandise sales? </label></td><td><input type="text" name="txt22" id="ms" size="30" maxlength="250"/></td></tr>
+<tr><td><label for="a2">Will there be a meet and greet?</label></td><td><input type="text" name="txt23" id="greet" size="30" maxlength="250"/></td></tr>
+<tr><td><label for="a3">Will there be a book signing?</label></td><td><input type="text" name="txt24" id="book" size="30" maxlength="250"/></td></tr>
+
+
+
+<tr><td><label for="ar">Refreshments: Fenway, Kerr, & afterHOURS only:</br>Chartwells Catering and
+ Event Services (Call x2479) </br>For more information on food policies, see the Student Organization Handbook</label></td> 
+
+</tr>
+
+</table>
+</td>
+<td rowspan="4">
+<table>
+<tr><td><label for="st">Event Type:</label></td></tr>
+<tr>
+<td><form><fieldset>
+<label><input type="checkbox" name="checkbox" value="Lecture"/>Lecture</label>
+<label><input type="checkbox" name="checkbox" value="Conference"/>Conference</label>
+<label><input type="checkbox" name="checkbox" value="Social/Reception"/>Social/Reception</label>
+<label><input type="checkbox" name="checkbox" value="afterHOURS"/>Film/Video</label>
+<label><input type="checkbox" name="checkbox" value="Rehearsal"/>Rehearsal</label>
+<label><input type="checkbox" name="checkbox" value="Concert/Performance"/>Concert/Performance</label>
+<label><input type="checkbox" name="checkbox" value="others"/>
+ others</label>
+</fieldset></form></td>
+</tr>
+
+<tr><td><label for="st">Setup Needs:</label></td></tr>
+<tr>
+<td><form><fieldset>
+<label><input type="checkbox" name="checkbox" value=" Podium "/> Podium </label>
+<label><input type="checkbox" name="checkbox" value="Easel(s)"/>Easel(s)</label>
+<label><input type="checkbox" name="checkbox" value="6ft Tables"/>6ft Tables</label>
+<label><input type="checkbox" name="checkbox" value="others"/>others</label>
+</fieldset></form></td>
+</tr>
+
+
+<tr><td><label for="st">Audio/Visual Needs:</label></td></tr>
+<tr>
+<td><form><fieldset>
+<label><input type="checkbox" name="checkbox" value="Cordless Mic"/>Cordless Mic</label>
+<label><input type="checkbox" name="checkbox" value="Lapel Mic"/>Lapel Mic</label>
+<label><input type="checkbox" name="checkbox" value="Wired Mic"/>Wired Mic</label>
+<label><input type="checkbox" name="checkbox" value="Mic Floor Stand"/>Mic Floor Stand</label>
+<label><input type="checkbox" name="checkbox" value="Extension Cord"/>Extension Cord</label>
+<label><input type="checkbox" name="checkbox" value="VGA Cable (Laptop)"/>VGA Cable (Laptop)</label>
+<label><input type="checkbox" name="checkbox" value=" LCD System "/> LCD System </label>
+<label><input type="checkbox" name="checkbox" value="CD"/>CD</label>
+<label><input type="checkbox" name="checkbox" value="DVD "/>DVD</label>
+<label><input type="checkbox" name="checkbox" value="External Audio Source"/>External Audio Source</label>
+</fieldset></form></td>
+</tr>
+
+
+<tr><td><label for="st">Setup Type (Fenway, Kerr, & afterHOURS only):</label></td></tr>
+<tr>
+<td><form><fieldset>
+<label><input type="checkbox" name="checkbox" value="Lecture"/>Lecture</label>
+<label><input type="checkbox" name="checkbox" value="Round Tables of 8"/>Round Tables of 8</label>
+<label><input type="checkbox" name="checkbox" value="Clear Room"/>Clear Room</label>
+<label><input type="checkbox" name="checkbox" value="Classroom"/>Classroom</label>
+<label><input type="checkbox" name="checkbox" value="See Diagram"/>See Diagram</label>
+<label><input type="checkbox" name="checkbox" value="Other"/>Other</label>
+
+</fieldset></form></td>
+</tr>
+
+<tr><table><td><label for="ln">Lighting Needs:</label></td> 
+<td><input type="text" name="txt20" id="ln" size="50" maxlength="250"/></td>
+</table></td></table></tr>
+
+
+
+
+
+
+
+
+<tr><td>
+
+
+<tr>
+<table>
+<tr><td><label for="a4"><b>Description of Event</b></label></td></tr>
+<tr><td><label for="a5"><u>(Please include names and order of Performers/Speakers; attach</u></label></td></tr>
+ <tr><td><label for="a6"><u>an extra sheet if necessary)</u></label></td></tr>
+</table>
+</tr>
+</td></tr>
+</table>
+
+<textarea name="txtBody" id="evendiscription" cols="50" rows="2"
+ tabindex="2"> </textarea>
+<p>I have read and understand the above rules as listed in the Event Information Agreement as well as all University policies, the laws of the </p>
+
+<p>Commonwealth of Massachusetts.  I also understand that it is my responsibility to share this information with my group.I understand that if </p>
+<p>if I don’t follow these rules, there may be disciplinary sanctions against me and my group.</p>
+
+<table>
+
+<tr><td><label for="a7"><b>Name of Student Group: </b></label></td><td><input type="text" name="txt25" id="studntname" size="30" maxlength="250"/></td></tr></table>
+<table><tr><td><label for="a8"><b>Name of Student Group Representative filling out the Form:</b></label></td><td><input type="text" name="txt26" id="nme" size="30" maxlength="250"/></td></tr></table>
+<table><tr><td><label for="a9"><b>Signature</b></label></td><td><input type="text" name="txt26" id="sign" size="30" maxlength="250"/></td>
+<td><label for="a10"><b>Date</b></label></td><td><input type="text" name="txt27" id="ne" size="30" maxlength="250"/></td></tr>
+<table><tr><td><label for="a11"><b>Name of Student Group Program Manager</b></label></td><td><input type="text" name="txt28" id="pm" size="30" maxlength="250"/></td></tr></table>
+<table><tr><td><label for="a12"><b>Signature</b></label></td><td><input type="text" name="txt29" id="sign" size="30" maxlength="250"/></td>
+<td><label for="a13"><b>Date</b></label></td><td><input type="text" name="txt30" id="nm" size="30" maxlength="250"/></td></tr>
+
+</table>
+<input type="Submit" value="Send"/>
+</body>
+</html>

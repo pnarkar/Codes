@@ -1,0 +1,11 @@
+
+<!Doctype html>
+<html>
+<head><title>Timings and venue of Cafe</title></head>
+<body>
+<a href="index.html"> 
+<img src="images/logo.gif" alt="example cafe" width="194" height="80"/></a><br/>
+<p>Details of opening hours and how to find us will go here</p>
+<p> <small> <a href="solution3.html"> Back </a> </small> </p>
+</body>
+</html>

@@ -1,0 +1,10 @@
+Rows of the Table would be read from left to right by the screenreader.Order is as follows: 
+Emily
+Jack
+Frank
+Mary
+Danie
+Amy
+Thomas
+Angels
+David

@@ -1,0 +1,29 @@
+#page {
+	 padding:5px;  
+	 margin:10px;  
+	 border:10px solid #000000;
+	
+	
+	
+}
+
+body{line-height=1.3em;}
+
+
+
+#menubar {
+	 padding-top:10px; 
+     padding-bottom:10px; 	 
+	 margin-top:20px; 
+     margin-bottom:20px;	 
+	 border-top:1px solid #aaaaaa;
+	 border-bottom:1px solid #aaaaaa;
+	 word-spacing:20px;
+	
+	
+}
+img.main_image{
+	border:1px solid #000000;
+	margin-right:10px;
+	margin-bottom:10px;
+}

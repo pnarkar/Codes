@@ -1,0 +1,56 @@
+body{
+	background-color:#E0E0D6;
+	text-align:center;
+}
+
+.col1{
+	float:left;
+	width:490px;
+	height:300px;
+	background-color:#FFFFFF;
+}
+
+.col2{
+	float:left;
+	height:300px;
+	width:250px;
+}
+
+.row{
+	height:60px;
+	width:238px;
+	font-size:12px;
+	text-align:left;
+	background-color:#FFFFFF;
+}
+
+#slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 240px; 
+    height: 240px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+
+.text{
+	width:150px;
+}
+
+.iconimageclass,.icontext{
+	
+	float:left;
+	margin:0px;
+}
+
+.icontext{
+	width:200px;
+}

@@ -1,0 +1,1 @@
+The <caption> element is written directly after the opening <table> tag; it should come before the first row. By default, most browsers will display the contents of this element centered above the table

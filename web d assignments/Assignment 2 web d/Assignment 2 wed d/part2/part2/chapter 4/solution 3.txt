@@ -1,0 +1,34 @@
+<!Doctype html>
+<html>
+<head><title>MOVIE TIME TABLE</title></head>
+<body><table border="2"><caption>Classic Movie Day</caption>
+<thead>
+<tr>
+<th></th>
+<th width="100">5 PM</th>
+<th width="100">7 PM</th>
+<th width="100">9 PM</th>
+<th width="100">11 PM</th>
+</tr>
+<tr>
+<th height="100">Screen One</th>
+<td height="100">Star Wars</td>
+<td height="100">Empire Strike Back</td>
+<td height="100">retun of Jedi</td>
+<td height="100">The Exoreist</td>
+</tr>
+<tr>
+<th height="100">Screen Two</th>
+<td colspan="2" height="100">Dance with the wolves </td>
+<td colspan="2" height="100"> Gone with the wind </td>
+</tr>
+<tr>
+<th height="100">Screen Three</th>
+<td colspan="2" height="100">2001:A Space Odyssey</td>
+<td height="100">The Conversation</td>
+<td height="100">5 Easy Pieces</td>
+</tr>
+</thead>
+</table>
+</body>
+</html>

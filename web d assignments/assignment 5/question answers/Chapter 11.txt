@@ -1,0 +1,31 @@
+solution1:
+
+default value of the top, right, bottom, and left properties is auto.
+
+
+
+solution2:
+The relatively, fixed and absolutely positioned elements can be adjusted using offset properties.
+
+
+
+solution3:
+
+If the <body> element has a sole child that is positioned absolutely, point of reference used will be Brower's viewport for its positioning .
+
+
+solution 4:
+
+
+If the <body> element has a sole child that is positioned relatively, with an id name of relativeelement, and that relatively positioned element has a child that is absolutely positioned, point of referenceused for the absolutely positioned element will be the element with the id name relative-element.
+
+
+solution 5:
+
+The brower's viewport.
+
+
+solution 6:
+
+z-index:1,z-index:2,z-index:3,z-index:4,z-index:5.
+		

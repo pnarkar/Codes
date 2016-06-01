@@ -1,0 +1,13 @@
+<html>
+<head></head>
+<body><h2> <a id="starters"> Starters </a> </h2>
+ <ul>
+ <li> Chestnut and Mushroom Goujons (<a href="vege.html"> v </a>) </li>
+ <li> Goat Cheese Salad (<a href="vege.html"> v </a>) </li>
+ <li> Honey Soy Chicken Kebabs </li>
+ <li> Seafood Salad </li>
+ </ul>
+<p> <small> <a href="menu.html"> Back </a> </small> </p>
+</body>
+
+</html>

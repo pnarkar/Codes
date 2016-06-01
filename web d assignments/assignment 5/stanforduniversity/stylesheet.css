@@ -1,0 +1,128 @@
+.header1
+{
+	background-color: maroon;
+	height : 100px;
+	
+}
+
+.second
+{
+	margin-top :-80px;
+	float : right;
+	margin-left: 200px;
+}
+
+
+.navigation{
+	width: 100%;
+	height: 5%;
+	background-color: gray;
+
+}
+
+.navigation ul {
+	width: 80%;
+	margin: 0 auto;
+	list-style-type: none;
+}
+
+.link-list-item {
+	width: auto;
+	
+	padding: 1% 2%;
+	display: inline-block;
+	color: white;
+	
+}
+
+
+.splash {
+	width: 100%;
+	height: auto;
+	float: left;
+}
+
+.splash img {
+	width: 100%;
+	height: auto;
+	float: left;
+}
+
+.section {
+	float: left;
+	width: 23%;
+	height: 350px;
+	margin: 0.5%;
+	padding: 0.3%;
+	background-color: rgba(255,255,255,.4);
+	border: 1px solid #424242;
+	border-radius: 3px;
+	color: black;
+	text-align: justify;
+}
+
+
+
+.image {
+	float: left;
+	width: 93%;
+	height: auto;
+	margin: 2%;
+	padding: 2%;
+	border-radius: 3px;
+}
+
+.image img{
+	float: left;
+	width: 100%;
+	height: auto;
+}
+
+.text {
+	float: left;
+	width: 93%;
+	height: auto;
+	margin: 2%;
+	padding: 2%;
+}
+.footer{
+	width: 100%;
+	height: 5%;
+	background-color: maroon;
+	float: left;
+	word-spacing: 4px;
+	letter-spacing: 3px;
+}
+
+.insidefooter {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.foot {
+	width: auto;
+	padding: 1% 0%;
+	color: black;
+	background-color: maroon;
+}
+
+.foot a{
+	text-decoration: none;
+	color: black;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+#cr {
+	float: right;
+}
+
+#sm {
+	float: left;
+}
+
+.hamburger{
+	
+	display:none;
+	
+	
+}

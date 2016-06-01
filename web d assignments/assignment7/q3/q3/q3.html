@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Part 3</title>
+  <style>
+ 
+  a {
+    display: inline-block;
+  }
+   span.sopink {
+    color: pink;
+    font-weight: bolder;
+  }
+   span.solast {
+    text-decoration: line-through;
+  }
+  .test {
+    border: 2px inset pink;
+  }
+     td {
+    width: 40px;
+    background: yellow;
+  }
+   
+   .starthidden {
+    display: none;
+  }
+   table {
+    background: #f3f7b8;
+  }
+ form {
+    border: 2px yellow solid;
+    padding: 2px;
+    margin: 0;
+    background: #efe;
+  }
+
+
+
+  </style>
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+ <div>
+  <input type="radio" name="letter" value="Hot Fuzz">
+  <span>my neu</span>
+</div>
+<div>
+  <input type="radio" value="Cold Fusion">
+  <span>boston</span>
+</div>
+<div>
+  <input type="radio" name="accept" value="Evil Plans">
+  <span>1st semester</span>
+</div>
+<a href="http://www.w3schools.com/bootstrap/default.asp" hreflang="en">text fields</a>
+<a href="http://www.w3schools.com/bootstrap/default.asp" hreflang="en-UK">Some other text fields</a>
+<a href="http://www.w3schools.com/bootstrap/default.asp" hreflang="english">will not be outlined</a></br>
+<input name="man-news">
+<input name="milkman">
+<input name="letterman2">
+<input name="newmilk">
+<div id="notmeatall"><p>id="notmeatall"</p></div>
+<div id="divmy">id="divmy"</div>
+<div>div</div>
+<p class="ourclass">p class="ourclass"</p>
+<p class="notourclass">p class="notourclass"</p>
+<span>span</span>
+<table>
+  <tr><td>first</td></tr>
+  <tr><td>second</td></tr>
+  <tr><td>third</td></tr>
+</table>
+<div id="login">The root of this document is: </div>
+<h1>Java Script Query</h1>
+<p>Contents 1</p>
+<h2>Selectors</h2>
+<p>Contents 2</p>
+<div>
+  <span>Rock,</span>
+  <span>Karl,</span>
+  <span>Brian</span>
+</div>
+<div>
+  <span>Pranali,</span>
+  <span>Parima,</span>
+  <span>Radhika,</span>
+   <b>Nobody</b>
+</div>
+<div><p>Hello inside paragraph</p></div>
+<div>Hello again! (with no paragraph)</div>
+<table border="1">
+  <tr><td>content1</td><td></td></tr>
+  <tr><td>content2</td><td></td></tr>
+</table>
+<form>
+  <input type="button" value="Input Button">
+  <input type="checkbox">
+ 
+  <input type="checkbox">
+  <input type="file">
+  <input type="hidden">
+ 
+  <input type="image">
+  <input type="password">
+  <input type="radio">
+ 
+  <input type="reset">
+  <input type="submit">
+  <input type="text">
+ 
+  <select>
+    <option>Option</option>
+  </select>
+ 
+  <textarea></textarea>
+  <button>Button</button>
+</form>
+<form>
+  <input name="email" disabled="disabled">
+  <input name="id">
+</form>
+<form>
+  <div>Form is surrounded by the yellow border.</div>
+ 
+  <label for="name">Forms:</label>
+  <input name="name" id="name">
+ 
+  <fieldset>
+    <label for="letter">fieldset:</label>
+    <input name="letter" id="letter">
+  </fieldset>
+</form>
+Sibling form: <input name="none">
+<form>
+  <label for="name">Name:</label>
+  <input name="name" id="name">
+  <fieldset>
+    <label for="Admitletter">Admitletter:</label>
+    <input name="Admitletter" id="Admitletter">
+  </fieldset>
+</form>
+
+
+
+
+<script>
+
+$( "input[name!='letter']" ).next().append( "<b> </b>" );
+$( "a[hreflang|='en']" ).css( "border", "3px dotted yellow" );
+$( "input[name*='man']" ).val( "has man in it!" );
+$( ".ourclass" ).css( "border", "3px solid pink" );
+$( "#divmy" ).css( "border", "3px solid blue" );
+$( "p.ourclass" ).css( "border", "3px solid yellow" );
+var elementCount = $( "*" ).css( "border" ).length;
+$( "body" ).prepend( "<h3>" + elementCount + " elements found</h3>" );
+$( "tr:first" ).css( "font-style", "italic" );
+$( "<b></b>" ).html( $( ":root" )[ 0 ].nodeName ).appendTo( "#login" );
+$( ":header" ).css({ background: "#ccc", color: "pink" });
+$( "div span:first-child" )
+  .css( "text-decoration", "underline" )
+  .hover(function() {
+    $( this ).addClass( "sopink" );
+  }, function() {
+    $( this ).removeClass( "sopink" );
+  });
+  $( "div span:last-child" )
+  .css({ color:"blue", fontSize:"80%" })
+  .hover(function() {
+    $( this ).addClass( "solast" );
+  }, function() {
+    $( this ).removeClass( "solast" );
+  });
+  $( "span:last-of-type" )
+  .css({ color:"blue", fontSize:"120%" })
+  .hover(function() {
+    $( this ).addClass( "solast" );
+  }, function() {
+    $( this ).removeClass( "solast" );
+  });
+$( "div:contains('Tane,')" ).css( "text-decoration","underline" );
+$( "div:has(p)" ).addClass( "test" );
+$( "td:parent" ).fadeTo( 1500, 0.3 );
+var input = $( "form input:checkbox" )
+  .wrap( "<span></span>" )
+  .parent()
+  .css({
+    background: "pink",
+    border: "3px blues solid"
+  });
+ 
+
+
+$( "form" ).submit(function( event ) {
+    event.preventDefault();
+});
+$( "input:disabled" ).val( "DISABLED SELECTOR" );
+$( "input:enabled" ).val( "ENABLED SELECTOR" );
+$( "form input" ).css( "border", "2px dotted blue" );
+$( "form fieldset input" ).css( "backgroundColor", "pink" );
+$( "label + input" ).css( "color", "blue" ).val( "Labeled!" );
+$( "tr:even" ).css( "background-color", "yellow" );
+
+
+
+
+
+</script>
+ 
+</body>
+</html>

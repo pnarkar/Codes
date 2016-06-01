@@ -1,0 +1,295 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<style>
+.highlight {
+   background-color: pink;
+}
+</style>
+<!-- Latest compiled and minified JavaScript -->
+<script>
+
+$(document).ready(function() {
+    $("#Table input").click(function() {
+        if ($(this).is(":checked")) {
+            $(this).parent().parent().addClass("highlight");
+        } else {
+            $(this).parent().parent().removeClass("highlight");
+        }
+    });
+});
+$(document).ready(function(){
+    $("#imageDivLink").click(function(){
+		$("#newboxes1-2").toggle();
+		    });
+	 $("#imageDivLink1").click(function(){
+        $("#newboxes2-2").toggle();
+    });
+	 $("#imageDivLink2").click(function(){
+        $("#newboxes3-2").toggle();
+    });
+});
+
+
+</script>
+<title>Assignment Part -4</title>
+</head>
+<body>
+
+<table class="table table-bordered"  id = "Table" style="border:#000000 solid; margin-top:60px;">
+	<thead bgcolor="pink">
+		<tr>
+        	<th width="5%"></th>
+            <th width="14%">STUDENT</th>
+            <th width="20%">ADVISOR</th>
+            <th width="15%">AWARD STATUS</th>
+            <th width="16%">SEMESTER</th>
+            <th width="6%">TYPE</th>
+            <th width="10%">BUDGET #</th>
+            <th width="14%">PERCENTAGE</th>
+       </tr>
+ </thead>
+ <tbody>
+ 		<tr>
+        	<td>
+    		<input type="checkbox" onclick="HighlightRow(this)" ><br/>
+             <a id ="imageDivLink"><img src="color_cyan.png" id="pic"></a>
+            </td>
+            <td>Pranali <br /> DEPT:MIS </td>
+            <td>Course  <br />Web design </td>
+            <td>Semester 1</td>
+            <td>Grade</td>
+            <td>Position</td>
+            <td>12345</td>
+            <td>info</td>         
+        </tr>
+        <tr>
+        <td colspan="8" id="contentDivImg">
+        <div class="newboxes-2" id="newboxes1-2" style="display:none;"><!-- Trigger the modal with a button -->        
+            <strong>Pranali </strong> DEPT:MIS  <br /> 
+            <strong>Course </strong>MIS  <br />
+            <strong>Semester </strong> <br />
+            <strong>Grade</strong> <br />
+            <strong>TA  </strong><br />
+            <strong>info</strong> <br />
+  <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#myModal">Change</button>
+  <!-- Modal -->
+  			<div class="modal fade" id="myModal" role="dialog">
+    				<div class="modal-dialog modal-sm">
+      				<div class="modal-content">
+        			<div class="modal-header">
+          			<button type="button" class="close" data-dismiss="modal">&times;</button>
+          			<h4 class="modal-title">Read -</h4>
+      	   </div>
+                    <div class="modal-body">
+                     <form class="form-horizontal">
+                        <fieldset>                      
+                         <!-- Text input-->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="Change ">Change </label>  
+                          <div class="col-md-4">
+                          <input id="Change " name="Change " type="text" placeholder="" class="form-control input-md">                        </div>
+                        </div>
+                        
+                        <!-- Text input-->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="Tuition Number">TNumber</label>  
+                          <div class="col-md-4">
+                          <input id="Tuition Number" name="Tuition Number" type="text" placeholder="" class="form-control input-md">
+                            
+                          </div>
+                        </div>
+                        
+                        <!-- Textarea -->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="Comment">Comment</label>
+                          <div class="col-md-4">                     
+                            <textarea class="form-control" id="Comment" name="Comment"></textarea>
+                          </div>
+                        </div>
+                        
+                        <!-- Button (Double) -->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="button1id"></label>
+                          <div class="col-md-8">
+                            <button id="button1id" name="button1id" class="btn btn-primary">Change</button>
+                            <button id="button2id" name="button2id" class="btn btn-primary">Cancel</button>
+                          </div>
+                        </div>
+                        
+                        </fieldset>
+                        </form>
+
+                    </div>
+                 </div>
+                </div>
+              </div>
+            </div>         
+       </td>
+       </tr>        
+          <tr>
+        	<td>
+    		<input type="checkbox" onclick="HighlightRow(this)" ><br/>
+             <a id ="imageDivLink1"><img src="color_cyan.png"></a>
+            </td>
+             <td>Priyanka <br /> DEPT:MIS </td>
+            <td>Course  <br />Web design </td>
+            <td>Semester 1</td>
+            <td>Grade</td>
+            <td>Position</td>
+            <td>12345</td>
+            <td>info</td>         
+        </tr>
+        <tr>
+        <td colspan="8">
+        <div class="newboxes-2" id="newboxes2-2" style="display:none;"><!-- Trigger the modal with a button -->        
+              <strong>Priyanka</strong> DEPT:MIS  <br /> 
+            <strong>Course </strong>MIS  <br />
+            <strong>Semester </strong> <br />
+            <strong>Grade</strong> <br />
+            <strong>TA  </strong><br />
+            <strong>info</strong> <br />
+  <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#myModal1">Change</button>
+  <!-- Modal -->
+  			<div class="modal fade" id="myModal1" role="dialog">
+    				<div class="modal-dialog modal-sm">
+      				<div class="modal-content">
+        			<div class="modal-header">
+          			<button type="button" class="close" data-dismiss="modal">&times;</button>
+          			<h4 class="modal-title">Change Details -</h4>
+      	   </div>
+                    <div class="modal-body">
+                     <form class="form-horizontal">
+                        <fieldset>                 
+                                            
+                        <!-- Text input-->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="Change Budget">Change Budget</label>  
+                          <div class="col-md-4">
+                          <input id="Change Budget1" name="Change Budget" type="text" placeholder="" class="form-control input-md">                            
+                          </div>
+                        </div>
+                        
+                        <!-- Text input-->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="Tuition Number">Tuition Number</label>  
+                          <div class="col-md-4">
+                          <input id="Tuition Number1" name="Tuition Number" type="text" placeholder="" class="form-control input-md">
+                   		</div>
+                        </div>
+                        
+                        <!-- Textarea -->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="Comment">Comment</label>
+                          <div class="col-md-4">                     
+                            <textarea class="form-control" id="Comment1" name="Comment"></textarea>
+                          </div>
+                        </div>
+                        
+                        <!-- Button (Double) -->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="button1id"></label>
+                          <div class="col-md-8">
+                            <button id="button3id" name="button1id" class="btn btn-primary">Change </button>
+                            <button id="button4id" name="button2id" class="btn btn-primary">Cancel</button>
+                          </div>
+                        </div>                        
+                        </fieldset>
+                        </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>         
+       </td>
+       </tr>   
+       
+        <tr>
+        	<td>
+    		<input type="checkbox" onclick="HighlightRow(this)" ><br/>
+             <a id ="imageDivLink2">
+             <img src="color_cyan.png"></a>
+            </td>
+            <td>Niraj<br />MIS</td>
+            <td>COURSE <br />  DEPT : MIS</td>
+            <td>aghsdh</td>
+            <td>WEB DESIGN</td>
+            <td>DESF</td>
+            <td>DELHI</td>
+            <td>INFO</td>         
+        </tr>
+        <tr>
+        <td colspan="8">
+        <div class="newboxes-2" id="newboxes3-2" style="display:none;"><!-- Trigger the modal with a button -->        
+             <strong>Niraj</strong> DEPT:MIS  <br /> 
+            <strong>Course </strong>MIS  <br />
+            <strong>Semester </strong> <br />
+            <strong>Grade</strong> <br />
+            <strong>TA  </strong><br />
+            <strong>info</strong> <br />
+  <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#myModal2">Change</button>
+  <!-- Modal -->
+  			<div class="modal fade" id="myModal2" role="dialog">
+    				<div class="modal-dialog modal-sm">
+      				<div class="modal-content">
+        			<div class="modal-header">
+          			<button type="button" class="close" data-dismiss="modal">&times;</button>
+          			<h4 class="modal-title">Change Details -</h4>
+      	   </div>
+                    <div class="modal-body">
+                     <form class="form-horizontal">
+                        <fieldset>                 
+                                            
+                        <!-- Text input-->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="Change Budget">Change Budget</label>  
+                          <div class="col-md-4">
+                          <input id="Change Budget2" name="Change Budget" type="text" placeholder="" class="form-control input-md">                            
+                          </div>
+                        </div>
+                        
+                        <!-- Text input-->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="Tuition Number">Tuition Number</label>  
+                          <div class="col-md-4">
+                          <input id="Tuition Number2" name="Tuition Number" type="text" placeholder="" class="form-control input-md">
+                   		</div>
+                        </div>
+                        
+                        <!-- Textarea -->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="Comment">Comment</label>
+                          <div class="col-md-4">                     
+                            <textarea class="form-control" id="Comment2" name="Comment"></textarea>
+                          </div>
+                        </div>
+                        
+                        <!-- Button (Double) -->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="button1id"></label>
+                          <div class="col-md-8">
+                            <button id="button5id" name="button1id" class="btn btn-primary">Change </button>
+                            <button id="button6id" name="button2id" class="btn btn-primary">Cancel</button>
+                          </div>
+                        </div>                        
+                        </fieldset>
+                        </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>         
+       </td>
+       </tr>   
+       
+  </tbody>
+</table>
+<input type="submit" name="submit" id="submit" value="Send Selected Items" disabled style="align:center; background-color:orange;" >
+</body>
+</html>

@@ -1,0 +1,23 @@
+solution1:
+The Shrink-to-fit rules; the element only expands enough to accommodate the content inside.
+
+
+solution 2:inline element would wrapped around.
+
+solution3: Top, middle and bottom keywords.
+
+
+solution 4: Clear:right property is used.
+
+
+solution 5: superscript - vertical-align: super; 
+ subscript-  vertical-align: sub; 
+
+
+solution 6: It appears between top and bottom elements and is relatively small in size with the normal text.
+
+
+solution 7:  The difference in the text-top keyword as opposed to the top keyword is that the text-top keyword causes alignment to happen with respect to the tallest character of the font of the surrounding text.
+
+
+solution 8:The baseline is the "imaginary line" which most letters "sit" on, in a line of text. The baseline value sets the row so that all the table data share the same baseline.

@@ -1,0 +1,2 @@
+solution:
+If we store first image in GIF it gives better image quality and size as its jst black and white. On the other hand JPEG works well on the second image for reduced size and image quality as it has different colours in it which might not be supported that well by GIF format.

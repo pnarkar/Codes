@@ -1,0 +1,9 @@
+<!Doctype html>
+<html>
+<head><title>Banana</title></head>
+<body> 
+ 
+
+<p> Banana is a fruit </p>
+</body>
+</html>
